@@ -1,13 +1,13 @@
 # RETROWAVE
 
 ## Table of Contents
-1. About
-2. Getting Started
-   2.1 Prerequisites
-   2.2. Installation
-   2.3 Usage
-3. 
-4. Contributors
+-  1. About
+- 2. Getting Started
+    - 2.1 Prerequisites
+    - 2.2. Installation
+    - 2.3 Usage
+- 3. Credits
+- 4. Contributors
 
 
 ## 1. About
@@ -16,7 +16,7 @@ O projeto RetroWave consiste na criação de dois objetos distintos, com a inten
 Estes são uma reinterpretação de duas peças tecnológicas já existentes: Um leitor de cassetes e um  lava lamp.
 
 ## 2. Getting Started
-# 2.1 Prerequisites
+### 2.1 Prerequisites
 Software:
 - Arduino IDE (com suporte ESP32)
 - Processing IDE
@@ -53,7 +53,7 @@ Vários  Jumpers, protoboard
 
 
 
-# 2.2 Installation
+### 2.2 Installation
 Instale via Arduino IDE → Ferramentas → Gerenciar Bibliotecas
 
 Lava lamp:
@@ -94,7 +94,7 @@ LeitorCasseteProcessing/
 
 
 
-# 2.3 Usage
+### 2.3 Usage
 Lava Lamp:
 - Ligações do Circuito
 
@@ -138,12 +138,12 @@ Leitor de cassetes:
 
 <img width="850" src="https://github.com/ClaraAriGomes/TI-Retrowave/blob/main/circuito.png">
 
-## Nunca conecte o MFRC522 ao 5V
+### Nunca conecte o MFRC522 ao 5V
 Conexão do Botão
 Um pino: GPIO 14
 Outro: GND
 
-# Teste Completo
+### Teste Completo
 Construa o circuito conforme presente no repositório
 Execute o sketch no Processing
 Ligue o ESP32 e abra o Monitor Serial
@@ -151,15 +151,13 @@ Aproxime uma tag NFC → toca uma música específica e inicia visualização
 Troque de tag → muda a música
 Pressione o botão → a música para
 
-
-
-# Dicas de Depuração
+### Dicas de Depuração
 Verifique arquivos .mp3 na pasta correta
 Confira SSID e senha WiFi
 Use println(code) no Processing para ver se o UID está sendo recebido
 Use ferramentas como MQTT Explorer para monitorar tópicos e mensagens
 
-# Broker MQTT
+### Broker MQTT
 Broker: broker.hivemq.com
 Porta: 1883
 Tópico: leitor
